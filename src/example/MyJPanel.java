@@ -23,7 +23,7 @@ public class MyJPanel extends JPanel {
     @Override
     public void paint(Graphics g) {
         g.setColor(Color.red);
-        g.drawRect(x,y,20,20);
+        g.drawRect(x,y,1,1);
     }
 
     public void keyPressed(KeyEvent e) {
