@@ -6,12 +6,12 @@ import javax.swing.JFrame;
 
 public class MyJFrame extends JFrame implements KeyListener {
 
-    private MyJPanel frame;
+    private MyJPanel panel;
 
     public MyJFrame() {
         super();
-        frame = new MyJPanel();
-        add(frame);
+        panel = new MyJPanel();
+        add(panel);
         pack();
         addKeyListener(this);
         repaint();
@@ -31,7 +31,7 @@ public class MyJFrame extends JFrame implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        frame.keyPressed(e);
+        panel.keyPressed(e);
         repaint();
     }
 
